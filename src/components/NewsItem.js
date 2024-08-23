@@ -10,8 +10,8 @@ export class NewsItem extends Component {
       let {title, description,imgUrl,newsUrl} = this.props;
     return (
       <div className='my-3'>
-        <div className="card" style={{ width: "18rem" }}>
-        <img src={imgUrl == null ?"https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2024/08/Volkswagens-ID-GTI-2.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1":imgUrl} className="card-img-top" alt="..." />
+        <div className="card">
+        <img src={imgUrl === null ? "https://images.pexels.com/photos/27775950/pexels-photo-27775950/free-photo-of-black-and-white-photo-of-a-woman-standing-on-a-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" : imgUrl} className="card-img-top" alt="" />
         <div className="card-body">
         <h5 className="card-title">{title}...</h5>
         <p className="card-text">
