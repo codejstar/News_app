@@ -2,7 +2,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import NewsItem from './NewsItem'
-import { ClerkLoading } from '@clerk/clerk-react';
 
 export class News extends Component {
   static propTypes = {}
