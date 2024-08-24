@@ -83,7 +83,9 @@ export class News extends Component {
           
        this.state.loading === false ? this.state.articles.map((elem) => (
         <div className="col-md-4" key={elem.url}>
-          <NewsItem title={elem.title.slice(0,45)} description={elem.description != null ? elem.description.slice(0,88) : elem.description} imgUrl={elem.urlToImage} newsUrl={elem.url}/>
+          <NewsItem title={elem.title.slice(0,45)} description={elem.description != null ? elem.description.slice(0,88) : elem.description} imgUrl={elem.urlToImage} newsUrl={elem.url} author={elem.author} date={elem.publishedAt} 
+          source={elem.source.name}
+          />
         </div>
         )) : <Spinner/>        
         }
